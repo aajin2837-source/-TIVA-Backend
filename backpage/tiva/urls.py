@@ -46,5 +46,3 @@ urlpatterns = [
    
 ]
 
-git config --global user.name "aajin2837-source"
-git config --global user.email "aajin2837@gamil.com"
