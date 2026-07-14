@@ -24,9 +24,7 @@ SECRET_KEY = 'django-insecure-_0z=du46t#j@yrz@g6bxl-(v^w#sprimo(b1zz5a4+c_asp^8c
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-ALLOWED_HOSTS = ['tiva.onrender.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['AAjin.pythonanywhere.com', 'tiva.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -55,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backpage.urls'
-
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
