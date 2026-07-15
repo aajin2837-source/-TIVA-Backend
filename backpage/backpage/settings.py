@@ -24,8 +24,7 @@ SECRET_KEY = 'django-insecure-_0z=du46t#j@yrz@g6bxl-(v^w#sprimo(b1zz5a4+c_asp^8c
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['AAjin.pythonanywhere.com', 'tiva.onrender.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['AAjin.pythonanywhere.com', 'tiva-frontend.onrender.com', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -113,7 +112,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ALLOW_ALL_ORIGINS = True
+# --- CORRECTED CORS SETTINGS ---
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOWED_ORIGINS = [
+    "https://tiva-frontend.onrender.com",
+]
+# -------------------------------
 
 
 # Static files (CSS, JavaScript, Images)
